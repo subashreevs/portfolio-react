@@ -92,13 +92,13 @@ const Technologies = () => {
             className='rounded-2xl border-4 border-neutral-800 p-4'>
                 <SiJavascript  className='text-7xl text-yellow-300' />
             </motion.div>
-            <motion.div 
+            {/* <motion.div 
             variants={iconVariants(4)}
             initial="initial"
             animate="animate"
             className='rounded-2xl border-4 border-neutral-800 p-4'>
                 <SiMicrosoftazure  className='text-7xl text-sky-600' />
-            </motion.div>
+            </motion.div> */}
             <motion.div 
             variants={iconVariants(2.5)}
             initial="initial"

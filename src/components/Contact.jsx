@@ -106,15 +106,31 @@ const ContactForm = () => {
         className='mt-15 flex flex-col items-center'
       >
         <h3 
-        whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
-        transition={{ duration: 0.5 }}
-        className='my-10 text-center text-3xl'>
-        Reach Out Directly
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: -100 }}
+          transition={{ duration: 0.5 }}
+          className='my-10 text-center text-3xl'
+        >
+          Reach Out Directly
         </h3>
-        <p>📞 <span className='text-purple-500'>+1 9309044770</span></p>
-        <p>📍 <span className='text-purple-500'>3209 E 10th St, Bloomington, Indiana - 47408, USA</span></p>
-        <p>✉️ <span className='text-purple-500'>subavenk@iu.edu</span></p>
+        
+        <div className='flex flex-col items-center text-center'>
+          <p className='mb-2'>
+            <span role='img' aria-label='phone'>📞</span> 
+            <span className='text-purple-500'> +1 9309044770</span>
+          </p>
+          <p className='mb-2'>
+            <span role='img' aria-label='location'>📍</span> 
+            <span className='text-purple-500'> 3209 E 10th St, Bloomington</span>
+          </p>
+          <p className='mb-2'>
+            <span className='text-purple-500'>IN 47408, USA</span>
+          </p>
+          <p className='mb-2'>
+            <span role='img' aria-label='email'>✉️</span> 
+            <span className='text-purple-500'> subavenk@iu.edu</span>
+          </p>
+        </div>
       </motion.div>
     </div>
   );

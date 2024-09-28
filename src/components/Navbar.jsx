@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin, FaGithub, FaInstagram, FaDownload } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaInstagram, FaFileDownload } from 'react-icons/fa';
 import { SiBuymeacoffee } from "react-icons/si";
 import { motion } from 'framer-motion';
 
@@ -53,14 +53,14 @@ const Navbar = () => {
 
         {/* Download Resume Button */}
         <motion.a
-          href="/Subashree_ResumeIntern_2YOE.pdf"
+          href="/Subashree_Resume_2YOE.pdf"
           download="Subashree_Resume_2YOE.pdf"
           variants={floatVariants}  // Same floating effect
           initial="initial"
           animate="animate"
           whileHover={hoverVariants.hover}
         >
-          <FaDownload />
+          <FaFileDownload />
         </motion.a>
 
         <motion.a
