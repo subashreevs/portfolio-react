@@ -117,7 +117,7 @@ const ContactForm = () => {
         <div className='flex flex-col items-center text-center'>
           <p className='mb-2'>
             <span role='img' aria-label='phone'>📞</span> 
-            <span className='text-purple-500'> +1 9309044770</span>
+            <span className='text-purple-500'> +1 (812) 318-0901</span>
           </p>
           <p className='mb-2'>
             <span role='img' aria-label='location'>📍</span> 
@@ -128,7 +128,7 @@ const ContactForm = () => {
           </p>
           <p className='mb-2'>
             <span role='img' aria-label='email'>✉️</span> 
-            <span className='text-purple-500'> subavenk@iu.edu</span>
+            <span className='text-purple-500'> subavenk@iu.edu | subashree.sundharesan@gmail.com</span>
           </p>
         </div>
       </motion.div>

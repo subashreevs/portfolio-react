@@ -1,3 +1,4 @@
+import React from "react";
 import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
@@ -5,6 +6,7 @@ import project4 from "../assets/projects/project-4.jpg";
 import project5 from "../assets/projects/project-5.png";
 import project6 from "../assets/projects/project-6.jpg";
 import project7 from "../assets/projects/project-7.jpg";
+import project8 from "../assets/projects/project-8.jpg";
 
 export const HERO_CONTENT = `Hey there! I’m Subashree Venkatesan Sundharesan – a computer science enthusiast with a knack for turning coffee into code (and occasionally pizza into brilliant ideas). Whether it's building snazzy front-ends, optimizing back-ends, or making computers do all the heavy lifting, I’m on a mission to make tech both smarter and greener. When I’m not wrestling with code, you’ll find me geeking out over the latest tech trends, or brainstorming ways to automate anything (including my laundry). Dive in to see what I’ve been up to - and don’t worry, no bugs here! (At least, not on purpose)`
  
@@ -15,15 +17,15 @@ export const EDUCATION = [
     year: 'August 2024 - May 2026',
     degree: 'Master of Science in Computer Science',
     institution: 'Indiana University - Bloomington, USA',
-    coursework: 'Coursework: Applied Machine Learning, Applied Algorithms, Advanced Database Concepts',
-    cgpa: '',
+    coursework: 'Coursework: Applied Machine Learning, Applied Algorithms, Advanced Database Concepts, Software Engineering, Native Mobile Application Development (Android and iOS), Applied Database Technologies',
+    cgpa: '3.7/4',
   },
   {
     year: 'August 2018 - May 2022',
     degree: 'Bachelor of Engineering in Computer Science',
     institution: 'Anna University - Chennai, India',
     coursework: 'Coursework: Object Oriented Programming, Data Structures & Algorithms, Database Management System, Machine Learning, Cloud Computing, Computer Networks, Operating Systems, Mobile Computing',
-    cgpa: '',
+    cgpa: '8.5/10',
   },
   // Add more education entries as needed
 ];
@@ -63,53 +65,68 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "Memories App",
+    link: "https://github.com/subashreevs/mern-stories-app",
+    image: project8,
+    description: 
+    "Developed a full-stack MERN application that allows users to create, edit, manage posts with features like image uploads, JWT-based authentication, pinned highlights, and advanced search/filtering by date, location, or keywords.",
+    technologies: [ "React.js", "TailwindCSS", "Node.js", "Express.js", "MongoDB Atlas", "JWT"],
+  },
+  {
     title: "AI Fitness Trainer",
+    link: "https://github.com/subashreevs/AIFitnessTraining-PoseEstimation",
     image: project1,
     description:
-    "Counts the number of effective reps in an arm workout by detecting land marks and angles in the human body. Integrated with live camera.",
+    "Counts the number of reps in a workout by detecting land marks and angles in a human body. Integrated with live camera.",
     technologies: ["Python", "Numpy", "OpenCV", "MediaPipe"],
   },
   {
+    title: "Weather Forecast App",
+    link: "https://github.com/subashreevs/flutter-weather-app",
+    image: project7,
+    description:
+      "Displays weather for current or any searched location. Uses Open Weather Map API to get current weather data.",
+    technologies: ["Flutter", "Dart", "Android Studio", "REST APIs", 'Lottie Animations', "iOS"],
+  },
+  {
+    title: "Portfolio Website",
+    link: "https://subashreevs.vercel.app/",
+    image: project3,
+    description:
+      "A personal portfolio website showcasing work experience, projects, skills, socials and, contact information.",
+    technologies: ["React", "javaScript", "HTML", "CSS", "React", "Bootstrap"],
+  },
+  {
     title: "Recipe Finder Application",
+    link: "https://github.com/subashreevs/ReactRecipeFinder",
     image: project2,
     description:
-      "Responsive web application which displays recipes based on the searched ingredient or dish. Uses Edamam Food API.",
+    "Responsive web application which displays recipes based on the searched ingredient or dish. Uses Edamam Food API.",
     technologies: ["React", "MaterialUI", "JavaScript", "HTML", "CSS"],
-  },
-  // {
-  //   title: "Portfolio Website",
-  //   image: project3,
-  //   description:
-  //     "A personal portfolio website showcasing work experience, projects, skills, socials and, contact information.",
-  //   technologies: ["HTML", "CSS", "React", "Bootstrap"],
-  // },
-  {
-    title: "Loan Eligibility Predictor",
-    image: project4,
-    description:
-      "Built a model with 82% accuracy with to automate the loan background checking process.",
-    technologies: ["Pandas", "Numpy", "Matplotlib", "Seaborn", "Scikitlearn"],
-  },
-  {
-    title: "College Management System",
-    image: project5,
-    description:
-      "Full stack web application that facilitates administration of students, faculty, curriculum, & dorms in a college.",
-    technologies: ["Java", "MySQL", "JDBC", "HTML", "CSS", "JavaScript"],
   },
   {
     title: "Business Card Builder",
+    link: "https://github.com/subashreevs/BusinessCardBuilder",
     image: project6,
     description:
       "Website that creates customized, downloadable business cards, with different themes. Lets you to add preferred social media profiles.",
     technologies: ["HTML", "CSS", "JavaScript", "CanvasJS"],
   },
   {
-    title: "Weather Forecast App",
-    image: project7,
+    title: "College Management System",
+    link: "https://github.com/subashreevs/StudentManagementSystem",
+    image: project5,
     description:
-      "Displays weather for any searched location. Uses Open Weather Map API to get current weather data.",
-    technologies: ["HTML", "CSS", "JavaScript"],
+      "Full stack web application that facilitates administration of students, faculty, curriculum, & dorms in a college.",
+    technologies: ["Java", "MySQL", "JDBC", "HTML", "CSS", "JavaScript"],
+  },
+  {
+    title: "Loan Eligibility Predictor",
+    link: "https://github.com/subashreevs/LoanEligibilityPrediction",
+    image: project4,
+    description:
+      "Built a model with 82% accuracy with to automate the loan background checking process.",
+    technologies: ["Pandas", "Numpy", "Matplotlib", "Seaborn", "Scikitlearn"],
   },
 ];
 

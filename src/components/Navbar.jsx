@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin, FaGithub, FaInstagram, FaFileDownload } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaInstagram, FaFileDownload, FaAward } from 'react-icons/fa';
 import { SiBuymeacoffee } from "react-icons/si";
 import { motion } from 'framer-motion';
 
@@ -81,6 +81,16 @@ const Navbar = () => {
           whileHover={hoverVariants.hover}
         >
           <FaGithub />
+        </motion.a>
+
+        <motion.a
+          href="https://subashreevs-certificates.netlify.app/"
+          variants={floatVariants}  // Same floating effect
+          initial="initial"
+          animate="animate"
+          whileHover={hoverVariants.hover}
+        >
+          <FaAward />
         </motion.a>
 
         <motion.a
