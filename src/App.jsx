@@ -5,7 +5,7 @@ import About from './components/About'
 import Technologies from './components/Technologies'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
-import Contact from './components/COntact'
+import Contact from './components/Contact'
 import Education from './components/Education'
 import { motion } from "framer-motion";
 
