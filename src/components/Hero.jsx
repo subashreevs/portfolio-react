@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { HERO_CONTENT } from '../constants';
-import profilepic from '../assets/kevinRushProfile.jpg';
+import profilepic from '../assets/subaProfile.jpeg';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Animation for letter-by-letter appearance
@@ -112,7 +112,7 @@ const Hero = () => {
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
-              className='rounded-full mt-10 w-40 h-40 lg:w-72 lg:h-72'
+              className='rounded-full mt-10 w-50 h-70 lg:w-72 lg:h-90'
               src={profilepic}
               alt='Subashree'
             />

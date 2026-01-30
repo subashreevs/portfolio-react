@@ -105,14 +105,14 @@ const ContactForm = () => {
         transition={{ duration: 0.5 }}
         className='mt-15 flex flex-col items-center'
       >
-        <h3 
+        <motion.h3 
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -100 }}
           transition={{ duration: 0.5 }}
           className='my-10 text-center text-3xl'
         >
           Reach Out Directly
-        </h3>
+        </motion.h3>
         
         <div className='flex flex-col items-center text-center'>
           <p className='mb-2'>
@@ -121,10 +121,10 @@ const ContactForm = () => {
           </p>
           <p className='mb-2'>
             <span role='img' aria-label='location'>📍</span> 
-            <span className='text-purple-500'> 3209 E 10th St, Bloomington</span>
+            <span className='text-purple-500'> 720 S College Mall Rd, Bloomington</span>
           </p>
           <p className='mb-2'>
-            <span className='text-purple-500'>IN 47408, USA</span>
+            <span className='text-purple-500'>Indiana 47401, USA</span>
           </p>
           <p className='mb-2'>
             <span role='img' aria-label='email'>✉️</span> 

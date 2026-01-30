@@ -14,6 +14,15 @@ import { SiMicrosoftazure } from "react-icons/si";
 
 import { SiGit } from "react-icons/si";
 
+import { SiPython } from "react-icons/si";
+import { SiFastapi } from "react-icons/si";
+import { SiDocker } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
+import { SiNodedotjs } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+import { SiPytorch } from "react-icons/si";
+import { SiOpenai } from "react-icons/si";
+
 
 const iconVariants = (duration) => ({
     initial: {y: -10},
@@ -105,6 +114,78 @@ const Technologies = () => {
             animate="animate"
             className='rounded-2xl border-4 border-neutral-800 p-4'>
                 <SiGit  className='text-7xl text-orange-600' />
+            </motion.div>
+
+            <motion.div
+            variants={iconVariants(3.5)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4"
+            >
+            <SiPython className="text-7xl text-yellow-300" />
+            </motion.div>
+
+            <motion.div
+            variants={iconVariants(2.8)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4"
+            >
+            <SiFastapi className="text-7xl text-emerald-400" />
+            </motion.div>
+
+            <motion.div
+            variants={iconVariants(4)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4"
+            >
+            <SiDocker className="text-7xl text-sky-500" />
+            </motion.div>
+
+            <motion.div
+            variants={iconVariants(3.2)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4"
+            >
+            <FaAws className="text-7xl text-orange-400" />
+            </motion.div>
+
+            <motion.div
+            variants={iconVariants(4.2)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4"
+            >
+            <SiNodedotjs className="text-7xl text-green-400" />
+            </motion.div>
+
+            <motion.div
+            variants={iconVariants(2.6)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4"
+            >
+            <SiTypescript className="text-7xl text-blue-500" />
+            </motion.div>
+
+            <motion.div
+            variants={iconVariants(3.7)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4"
+            >
+            <SiPytorch className="text-7xl text-orange-500" />
+            </motion.div>
+
+            <motion.div
+            variants={iconVariants(4.4)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4"
+            >
+            <SiOpenai className="text-7xl text-neutral-200" />
             </motion.div>
 
         </motion.div>

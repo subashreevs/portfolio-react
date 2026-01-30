@@ -17,7 +17,20 @@ const Experience = () => {
                 initial = {{opacity:0, x:-100}}
                 transition={{duration: 1}}
                 className='w-full lg:w-1/4'>
-                    <p className='mb-2 text-sm text-neutral-400'>{experience.year}</p>
+                <p className="mb-3 text-sm text-neutral-400">
+                {experience.year}
+                </p>
+
+                {experience.logo && (
+                <motion.img
+                    src={experience.logo}
+                    alt={experience.company}
+                    className="h-20 w-20 rounded-xl object-contain bg-white p-0.5"
+                    initial={{ opacity: 0, scale: 0.85 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.4 }}
+                />
+                )}
                 </motion.div>
                 <motion.div 
                 whileInView={{opacity:1 , x:0}}
@@ -26,7 +39,7 @@ const Experience = () => {
                 className='w-full max-w-xl lg:w-3/4'>
                     <h6 className='mb-2 font-semibold'>{experience.role} -{" "}
                     <span className='text-sm text-purple-100'>{experience.company}</span></h6>
-                    <p className='bm-4 text-neutral-400'>{experience.description}</p>
+                    <p className='mb-4 text-neutral-400'>{experience.description}</p>
                     {experience.technologies.map((tech, index) => (
                         <span className='mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-xs font-medium text-purple-600' key={index}>{tech}</span>
                     ))}
