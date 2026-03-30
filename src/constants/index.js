@@ -1,4 +1,3 @@
-import React from "react";
 import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
@@ -22,6 +21,69 @@ import cdacLogo from "../assets/experience/cdacLogo.jpeg";
 export const HERO_CONTENT = `Hey there! I'm Suba. I am a computer science enthusiast with a knack for turning coffee into code (and occasionally pizza into brilliant ideas). Whether it's building snazzy front-ends, optimizing back-ends, or making computers do all the heavy lifting, I'm on a mission to make tech both smarter and greener. When I'm not wrestling with code, you'll find me geeking out over the latest tech trends, or brainstorming ways to automate anything (including my laundry). Dive in to see what I've been up to. And don't worry, no bugs here! (atleast not on purpose)`
  
 export const ABOUT_TEXT = `I am a dedicated and versatile computer science engineer currently pursuing my MS in Computer Science at Indiana University Bloomington, driven by a passion for crafting efficient and scalable applications that deliver exceptional value. Prior to my academic journey, I gained two years of industry experience as a software engineer where I honed my ability to transform complex challenges into elegant solutions. I hold a Bachelor's in Computer Science and Engineering from Anna University, India, where I built a robust foundation in algorithms, data structures, and machine learning. I am a firm believer in the power of hands-on projects to bridge theory and practice, thriving on practical experience to deepen my understanding. Throughout my career, I have explored various facets of computer science - including UI design, backend development, database management, machine learning, and data analytics - because why limit myself to just one area of expertise when I can collect them all like Pokémon?`
+
+export const HERO_CONTENT_TA = `வணக்கம்! நான் சுபா. காபியை code-ஆகவும், சில நேரங்களில் pizza-வை நல்ல ideas-ஆகவும் மாற்றிக்கொள்வதில் மகிழும் ஒரு computer science ஆர்வலர். கண்ணைக் கவரும் front-end ஆக இருந்தாலும், வேகமான back-end ஆக இருந்தாலும், அல்லது computers எல்லா கஷ்டப்பணியும் செய்யச் செய்வதாக இருந்தாலும், technology-ஐ இன்னும் புத்திசாலித்தனமாகவும் பயனுள்ளதாகவும் மாற்ற வேண்டும் என்பதே என் நோக்கம். நான் code-ஐ debug செய்யாமல் இருக்கும் நேரங்களில், புதிய tech trends-ஐ ஆர்வமாகப் பார்ப்பதிலும், எந்த வேலையையும் automate செய்யலாம் என்று யோசிப்பதிலும் இருப்பேன். நான் செய்து கொண்டிருக்கும் விஷயங்களை இங்கே பாருங்கள். கவலைப்பட வேண்டாம், bugs இருந்தாலும் அது நினைத்துப் போட்டதல்ல!`
+
+export const ABOUT_TEXT_TA = `நான் தற்போது Indiana University Bloomington-ல் Computer Science துறையில் MS செய்து வரும், அர்ப்பணிப்பும் பல்திறனும் கொண்ட ஒரு computer science engineer. திறமையானதும் scalable-ஆகிய applications உருவாக்கும் ஆர்வமே என்னை தொடர்ந்து முன்னேற்றுகிறது. என் higher studies தொடங்குவதற்கு முன்பு, software engineer ஆக இரண்டு ஆண்டுகள் தொழில்துறை அனுபவம் பெற்றேன்; அதனால் சிக்கலான challenges-ஐ elegant solutions-ஆக மாற்றும் திறனை மேம்படுத்திக்கொண்டேன். இந்தியாவின் Anna University-யில் Computer Science and Engineering-ல் பட்டம் பெற்றுள்ளேன்; அங்கு algorithms, data structures, மற்றும் machine learning போன்ற துறைகளில் வலுவான அடித்தளம் உருவானது. hands-on projects தான் theory மற்றும் practice-ஐ இணைக்கும் சிறந்த பாலம் என்று நான் நம்புகிறேன். UI design, backend development, database management, machine learning, data analytics போன்ற computer science இன் பல துறைகளை நான் ஆர்வத்துடன் ஆராய்ந்துள்ளேன். ஏன் ஒரே ஒரு திறமையில் மட்டும் நின்று விட வேண்டும், எல்லாவற்றையும் Pokémon cards மாதிரி சேகரிக்க முடியாதா?`
+
+export const UI_STRINGS = {
+  en: {
+    buyMeCoffee: "Buy Me a Coffee",
+    darkMode: "Switch to dark mode",
+    lightMode: "Switch to light mode",
+    resume: "Download Resume",
+    basedIn: "Based in",
+    aboutMe: "About Me",
+    education: "Education",
+    educationTitle: "Academic foundation with a practical bent.",
+    educationCopy: "Coursework and research-oriented training that complement hands-on industry experience.",
+    technologies: "Toolbox",
+    technologiesTitle: "Technologies I like building with.",
+    technologiesCopy: "A practical mix of frontend frameworks, backend platforms, cloud tools, data systems, and AI-oriented libraries.",
+    experience: "Experience",
+    experienceTitle: "Recent roles and real-world impact.",
+    experienceCopy: "Product engineering, observability, research systems, teaching, and full-stack delivery across industry and academia.",
+    projects: "Projects",
+    contactMe: "Contact Me",
+    email: "Email",
+    phone: "Phone",
+    location: "Location",
+    sendMessage: "Send a message",
+    yourName: "Your Name",
+    yourEmail: "Your Email",
+    yourMessage: "Tell me a little about what you have in mind",
+    send: "Send Message",
+    sending: "Sending...",
+  },
+  ta: {
+    buyMeCoffee: "எனக்கு ஒரு காபி வாங்குங்கள்",
+    darkMode: "Dark mode-க்கு மாற்று",
+    lightMode: "Light mode-க்கு மாற்று",
+    resume: "ரெஸ்யூமே பதிவிறக்கு",
+    basedIn: "இருப்பிடம்",
+    aboutMe: "என்னை பற்றி",
+    education: "கல்வி",
+    educationTitle: "கல்வி அடித்தளம் மற்றும் நடைமுறை அனுபவம்.",
+    educationCopy: "Coursework மற்றும் research experience, hands-on industry experience-ஐ முழுமைப்படுத்துகின்றன.",
+    technologies: "தொழில்நுட்பங்கள்",
+    technologiesTitle: "நான் பயன்படுத்த விரும்பும் தொழில்நுட்பங்கள்.",
+    technologiesCopy: "frontend, backend, cloud, data systems, மற்றும் AI tools ஆகியவற்றின் கலப்பு.",
+    experience: "அனுபவம்",
+    experienceTitle: "சமீபத்திய பணிகள் மற்றும் தாக்கம்.",
+    experienceCopy: "Product engineering, observability, research systems, teaching, மற்றும் full-stack delivery ஆகிய துறைகளில் செய்த வேலைகள்.",
+    projects: "திட்டங்கள்",
+    contactMe: "தொடர்பு கொள்ள",
+    email: "மின்னஞ்சல்",
+    phone: "தொலைபேசி",
+    location: "இருப்பிடம்",
+    sendMessage: "செய்தி அனுப்புங்கள்",
+    yourName: "உங்கள் பெயர்",
+    yourEmail: "உங்கள் மின்னஞ்சல்",
+    yourMessage: "நீங்கள் நினைப்பதைச் சிறிது எழுதுங்கள்",
+    send: "செய்தி அனுப்பு",
+    sending: "அனுப்பப்படுகிறது...",
+  },
+};
 
 export const EDUCATION = [
   {
@@ -210,7 +272,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "3209 E 10th St, Bloomington, Indiana - 47408",
-  phoneNo: "+1 930 904 4770",
-  email: "subavenk@iu.edu",
+  address: "720 S College Mall Rd, Bloomington, Indiana - 47401",
+  phoneNo: "+1 812 318 0901",
+  email: "subashree.sundharesan@gmail.com",
 };

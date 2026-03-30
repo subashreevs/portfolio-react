@@ -1,72 +1,56 @@
-import React from 'react'
 import aboutpic from '../assets/subaAbout.jpeg'
 import aboutgif from '../assets/subaGif.gif'
-import { ABOUT_TEXT } from '../constants'
+import { ABOUT_TEXT, ABOUT_TEXT_TA, UI_STRINGS } from '../constants'
+import PropTypes from 'prop-types'
 import {motion} from "framer-motion"
-import { HiOutlineSparkles } from "react-icons/hi2";
-// or
-import { FaPlayCircle } from "react-icons/fa";
 
-
-const About = () => {
+const About = ({ locale = 'en' }) => {
+  const copy = UI_STRINGS[locale]
+  const aboutText = locale === 'ta' ? ABOUT_TEXT_TA : ABOUT_TEXT
   return (
-    <div className='border-b border-neutral-900 pb-4'>
-        <motion.h2 
-        whileInView={{opacity:1 , y:0}}
-        initial = {{opacity:0, y:-100}}
-        transition={{duration: 1.5}}
-        className='my-20 text-center text-4xl'>About Me</motion.h2>
-        <div className='flex flex-wrap'>
-            <motion.div 
-            whileInView = {{opacity: 1, x:0}}
-            initial={{opacity:0, x: -100}}
-            transition={{duration: 1}}
-            className='w-full lg:w-1/2 lg:p-8'>
-            <div className="relative group rounded-lg overflow-hidden cursor-pointer">
-  {/* Hint chip (visible by default, hides on hover) */}
-  <div className="absolute left-3 top-3 z-10 flex items-center gap-2 rounded-full
-                  bg-black/45 backdrop-blur-md px-3 py-1.5
-                  text-xs font-medium text-purple-200
-                  border border-purple-500/30
-                  shadow-[0_0_18px_rgba(147,51,234,0.25)]
-                  transition-opacity duration-300
-                  group-hover:opacity-0">
-    <span className="hidden sm:inline">Hover</span>
-    <span className="text-base leading-none">👆🏻</span>
-    <span className="sm:hidden">Animate</span>
-  </div>
-
-  {/* Static image */}
-  <img
-    src={aboutpic}
-    alt="Subashree"
-    className="rounded-lg transition-opacity duration-300 group-hover:opacity-0"
-  />
-
-  {/* GIF */}
-  <img
-    src={aboutgif}
-    alt="Subashree GIF"
-    className="absolute inset-0 rounded-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-  />
-</div>
-
-
-            </motion.div>
-
-            
-            <motion.div 
+    <section className='section-shell' id='about'>
+      <div className='section-inner'>
+        <div className='grid gap-10 lg:grid-cols-[0.9fr_1.1fr]'>
+          <motion.div
             whileInView={{opacity: 1, x:0}}
-            initial={{opacity:0, x:100}}
-            transition={{duration:1}}
-            className='w-full lg:w-1/2' >
-                <div className='flex justify-center lg:justify-start'>
-                    <p className='my-2 max-w-xl py-20 px-8'>{ABOUT_TEXT}</p>
-                </div>  
-            </motion.div>
+            initial={{opacity:0, x: -80}}
+            transition={{duration: 0.8}}
+          >
+            <div className='section-kicker'>{copy.aboutMe}</div>
+            <h2 className='section-title max-w-lg'>{copy.aboutMe}</h2>
+            <p className='section-copy mt-6 max-w-xl text-base leading-8 sm:text-lg'>{aboutText}</p>
+          </motion.div>
+
+          <motion.div
+            whileInView={{opacity: 1, x:0}}
+            initial={{opacity:0, x:80}}
+            transition={{duration:0.8}}
+            className='grid gap-5 sm:grid-cols-2'
+          >
+            <div className='glass-card group relative overflow-hidden rounded-[2rem] p-3 sm:col-span-2'>
+              <div className='absolute left-4 top-4 z-10 rounded-full border border-white/10 bg-slate-950/70 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200'>
+                Hover to reveal
+              </div>
+              <img
+                src={aboutpic}
+                alt='Subashree'
+                className='h-full min-h-[320px] w-full rounded-[1.5rem] object-contain bg-slate-950/40 transition duration-500 group-hover:opacity-0'
+              />
+              <img
+                src={aboutgif}
+                alt='Subashree animated portrait'
+                className='absolute inset-3 h-[calc(100%-1.5rem)] w-[calc(100%-1.5rem)] rounded-[1.5rem] bg-slate-950/40 object-contain opacity-0 transition duration-500 group-hover:opacity-100'
+              />
+            </div>
+          </motion.div>
         </div>
-    </div>
+      </div>
+    </section>
   )
 }
 
 export default About
+
+About.propTypes = {
+  locale: PropTypes.oneOf(['en', 'ta']),
+}
